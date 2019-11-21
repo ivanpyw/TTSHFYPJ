@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".front_end.medicinespecific_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/medicinespecificnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@drawable/item_selected"
+        app:itemTextColor="@drawable/item_selected"
+        app:menu="@menu/medicinespecificnavigation"
+        app:labelVisibilityMode="labeled"
+        android:layout_margin="20dp"
+        android:outlineProvider="background"
+        app:elevation="14dp"
+        android:theme="@style/Widget.BottomNavigationView"
+        app:itemTextAppearanceActive="@style/specificnavbartextsize"
+        app:itemTextAppearanceInactive="@style/specificnavbartextsize"
+        />-->
+
+    <info.hoang8f.android.segmented.SegmentedGroup
+        xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/medicinespecificnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="100"
+        segmentedgroup:sc_border_width="2dp"
+        >
+
+        <RadioButton
+            android:id="@+id/DetailsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:onClick="DetailsButton"
+            android:layout_weight="10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/RadioButton"
+            android:drawableLeft="@drawable/informationicon"
+            android:textSize="20dp"
+            android:checked="true"
+            android:fontFamily="@font/comfortaa_bold"
+/>
+
+        <RadioButton
+            android:id="@+id/GuideButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guide"
+            android:onClick="GuideButton"
+            android:layout_weight="10"
+
+            style="@style/RadioButton"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableLeft="@drawable/instuctionicon"
+            android:textSize="20dp"
+            android:fontFamily="@font/comfortaa_bold"/>
+
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/medicinefragmentplaceholder"
+       android:layout_marginTop="18dp"
+       android:layout_marginRight="18dp"
+       android:layout_marginLeft="18dp"
+       />
+</LinearLayout>

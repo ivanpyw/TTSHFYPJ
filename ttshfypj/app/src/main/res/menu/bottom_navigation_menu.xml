@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item android:id="@+id/navigation_reminders"
+        android:icon="@drawable/reminderbell"
+        android:title="Reminder"/>
+
+    <item android:id="@+id/navigation_medication"
+        android:icon="@drawable/reminderpill"
+        android:title="Medication"/>
+
+    <item android:id="@+id/navigation_help"
+        android:icon="@drawable/reminderquestion"
+        android:title="Help"/>
+
+    <item android:id="@+id/navigation_profile"
+        android:icon="@drawable/reminderprofile"
+        android:title="Profile"/>
+
+</menu>

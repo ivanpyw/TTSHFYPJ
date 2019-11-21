@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/my_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/colorWhite"
+      android:elevation="8dp"
+      android:padding="2dp"
+      android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+      app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:src ="@drawable/ttshlogo"/>
+  </androidx.appcompat.widget.Toolbar>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:elevation="0dp"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@drawable/item_selected"
+        app:itemTextColor="@drawable/item_selected"
+        app:menu="@menu/bottom_navigation_menu"
+        app:labelVisibilityMode="labeled"
+        android:theme="@style/Widget.BottomNavigationView"
+        android:layout_below="@id/my_toolbar"
+        app:itemTextAppearanceActive="@style/navbartextsize"
+        app:itemTextAppearanceInactive="@style/navbartextsize"
+        />
+
+    <View
+        android:id="@+id/shadowline"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/bottom_navigation"
+        android:background="@drawable/topbarshadow" />
+
+  <FrameLayout
+      android:id="@+id/fragmentplaceholder"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/bottom_navigation"
+      android:layout_marginBottom="0dp"
+      />
+
+
+
+</RelativeLayout>

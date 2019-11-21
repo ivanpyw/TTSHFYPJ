@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HiddenTitleTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#6200EE</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="android:windowLightStatusBar">@color/colorBlack</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/mainsplash</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="android:windowLightStatusBar">@color/colorBlack</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="android:buttonTint">@color/colorWhite</item>
+
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <!-- Used for the background -->
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/comfortaa_regular</item>
+    </style>
+
+    <style name="navbartextsize" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="specificnavbartextsize" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="details" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+
+
+</resources>
